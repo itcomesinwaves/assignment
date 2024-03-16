@@ -3,8 +3,8 @@ module.exports = function(grunt) {
         sass: {
             options: {
                 implementation: require('sass'),
-                sourceMap: true, // Generate source maps
-                outputStyle: 'compressed' // Minify the CSS output
+                sourceMap: true, 
+                outputStyle: 'compressed' 
             },
             dist: {
                 files: {
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-sass'); // Load grunt-sass
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
