@@ -19,9 +19,9 @@ $(document).ready(function () {
         allImages.forEach((image, i) => {
 
                 $('.photo-grid').append(`
-                    <div loading="lazy" class="card">
+                    <div class="card">
                         <input type="checkbox" id="checkbox${i}" />
-                        <label for="checkbox${i}" style="background-image: url('${image}');"></label>
+                        <label loading="lazy" for="checkbox${i}" style="background-image: url('${image}');"></label>
                     </div>
                 `);
         });
